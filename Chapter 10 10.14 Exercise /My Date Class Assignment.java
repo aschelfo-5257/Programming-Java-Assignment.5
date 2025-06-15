@@ -1,4 +1,4 @@
-public class MyDate() {
+public class MyDate {
   
     private int year;
     private int month;
@@ -9,7 +9,7 @@ public class MyDate() {
     private long milliseconds;
 
     // Constructor from components:
-    public myDate (int year, int month, int day, int hour, int minute, int second, int milliseconds) {
+    public MyDate(int year, int month, int day, int hour, int minute, int second, int milliseconds) {
       Calendar calendar = Calendar.getInstance();
       calendar.set(year, month, day, hour, minute, second);
       calendar.set(Calendar.MILLISECOND, milliseconds);
@@ -23,8 +23,8 @@ public class MyDate() {
       return calendar.get(Calendar.YEAR);
     }
     // Method for the milliseconds:
-    public long getMilliseconds() {
-      return milliseconds;
+    public MyDate(long milliseconds) {
+    this.milliseconds = milliseconds;
     }
     // Using for the string
     public String format(String pattern) {
